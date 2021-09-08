@@ -7,7 +7,7 @@ export const pens = [
             lastName: 'Ortega',
             username: 'cristianortega'
         },
-        'previewImage': './assets/previewLoaderCSS.gif',
+        'previewImage': 'previewLoaderCSS.gif',
         'html': `<div class="spinner-css">
     <span class="side sp_left">
         <span class="fill"></span>
@@ -282,7 +282,7 @@ export const pens = [
             lastName: 'Ortega',
             username: 'cristianortega'
         },
-        'previewImage': './assets/previewMediaCardGlassmorphism.gif',
+        'previewImage': 'previewMediaCardGlassmorphism.gif',
         'html': `<div class="container">
     <div class='card'>
         <div class='content'>

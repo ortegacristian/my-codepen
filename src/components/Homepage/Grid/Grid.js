@@ -19,7 +19,7 @@ export const Grid = () => {
             <nav className='pagination'>
                 <button className='pagination-button'>
                     Next
-                    <img src='./assets/icons/rightArrow.svg' alt='Next' />
+                    <img src='./my-codepen/assets/icons/rightArrow.svg' alt='Next' />
                 </button>
             </nav>
         </div>

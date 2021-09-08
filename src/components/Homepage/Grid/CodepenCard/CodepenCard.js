@@ -21,7 +21,7 @@ export const CodepenCard = ({data}) => {
             </header>
             <div className='thumbnail'>
                 <a className='cover-link' href={`/${owner.username}/pen/${id}`}>
-                    <img className='preview-image' alt={`${name}`} src={`${previewImage}`} />
+                    <img className='preview-image' alt={`${name}`} src={`./my-codepen/assets/${previewImage}`} />
                 </a>
             </div>
         </article>

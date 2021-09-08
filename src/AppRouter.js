@@ -15,7 +15,7 @@ export const AppRouter = ({match}) => {
     return (
         <Router>
             <Switch>
-                <Route exact path="/" component={ Homepage }/>
+                <Route exact path="/my-codepen" component={ Homepage }/>
                 <Route path={"/:userId/pen/:penId"} component={ Pen }/>
                 <Route path={"/:userId/full/:penId"} component={ FullPen }/>
                 <Route path={"/search/pens?"} component={ Searcher } />
