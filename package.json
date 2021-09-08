@@ -1,5 +1,6 @@
 {
   "name": "mycodepen",
+  "homepage" : "https://ortegacristian.github.io/my-codepen/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
