@@ -7,7 +7,7 @@ export const TopicCard = ({src,name}) => {
             <a href={`/topic/${src}`} className="topic">
                 <div className='card'>
                     <div className='content'>
-                        <img src={`./my-codepen/assets/topics/${src}.svg`} alt={`${name.toUpperCase()} Logo`} />
+                        <img src={`./assets/topics/${src}.svg`} alt={`${name.toUpperCase()} Logo`} />
                         <h3>{name}</h3>
                     </div>
                 </div>
