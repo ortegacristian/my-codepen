@@ -12,13 +12,16 @@ import { FullPen } from './components/FullPen/FullPen';
 import { Searcher } from './components/Search/Searcher';
 
 export const AppRouter = ({match}) => {
+
+    let basename = document.location.pathname;
+
     return (
-        <Router>
+        <Router basename={basename}>
             <Switch>
-                <Route exact path="/" component={ Homepage }/>
-                <Route path={"/:userId/pen/:penId"} component={ Pen }/>
-                <Route path={"/:userId/full/:penId"} component={ FullPen }/>
-                <Route path={"/search/pens?"} component={ Searcher } />
+                <Route path={`${basename}/:userId/pen/:penId`} component={ Pen }/>
+                <Route path={`${basename}/:userId/full/:penId`} component={ FullPen }/>
+                <Route path={`${basename}/search/pens?`} component={ Searcher } />
+                <Route exact path={basename} component={ Homepage }/>
             </Switch>
         </Router>
     )
