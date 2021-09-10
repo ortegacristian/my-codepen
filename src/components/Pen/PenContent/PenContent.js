@@ -22,7 +22,7 @@ export const PenContent = () => {
                 <div className='output-container'>
                     <div className='output-sizer'>
                         <div className='result'>
-                            <iframe src={`/my-codepen/cristianortega/full/${penId}`} className='result-iframe' title='pen-content'></iframe>
+                            <iframe src={`/cristianortega/full/${penId}`} className='result-iframe' title='pen-content'></iframe>
                         </div>
                     </div>
                 </div>
