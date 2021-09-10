@@ -19,6 +19,9 @@ export const AppRouter = () => {
         basename = "/my-codepen";
     }
 
+    console.log(document.location.pathname);
+    console.log(basename);
+
     return (
         <Router basename={basename}>
             <Switch>
