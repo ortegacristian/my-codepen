@@ -14,9 +14,11 @@ import { Searcher } from './components/Search/Searcher';
 export const AppRouter = () => {
 
     let basename = "";
+    let homepagePath = "/";
     
     if(document.location.pathname.includes("my-codepen")) {
         basename = "/my-codepen";
+        homepagePath = "/my-codepen";
     }
 
     console.log(document.location.pathname);
@@ -25,10 +27,10 @@ export const AppRouter = () => {
     return (
         <Router basename={basename}>
             <Switch>
+                <Route exact path={`${homepagePath}`} component={ Homepage }/>
                 <Route path={`${basename}/:userId/pen/:penId`} component={ Pen }/>
                 <Route path={`${basename}/:userId/full/:penId`} component={ FullPen }/>
                 <Route path={`${basename}/search/pens?`} component={ Searcher } />
-                <Route exact path={basename} component={ Homepage }/>
             </Switch>
         </Router>
     )
