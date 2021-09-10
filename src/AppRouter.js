@@ -11,11 +11,11 @@ import { Pen } from './components/Pen/Pen';
 import { FullPen } from './components/FullPen/FullPen';
 import { Searcher } from './components/Search/Searcher';
 
-export const AppRouter = ({match}) => {
+export const AppRouter = () => {
 
     let basename = "";
     
-    if(basename.includes("my-codepen")) {
+    if(document.location.pathname.includes("my-codepen")) {
         basename = "/my-codepen";
     }
 
