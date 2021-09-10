@@ -1,7 +1,7 @@
 import React from 'react';
 
 import {
-    BrowserRouter as Router,
+    HashRouter as Router,
     Switch,
     Route
 } from 'react-router-dom'; 
@@ -13,21 +13,13 @@ import { Searcher } from './components/Search/Searcher';
 
 export const AppRouter = () => {
 
-    let basepath = "";
-    let homepagePath = "/";
-    
-    if(document.location.pathname.includes("my-codepen")) {
-        basepath = "/my-codepen";
-        homepagePath = "/my-codepen";
-    }
-
     return (
         <Router>
             <Switch>
-                <Route exact path={`${homepagePath}`} component={ Homepage }/>
-                <Route path={`${basepath}/:userId/pen/:penId`} component={ Pen }/>
-                <Route path={`${basepath}/:userId/full/:penId`} component={ FullPen }/>
-                <Route path={`${basepath}/search/pens?`} component={ Searcher } />
+                <Route exact path={`/`} component={ Homepage }/>
+                <Route path={`/:userId/pen/:penId`} component={ Pen }/>
+                <Route path={`/:userId/full/:penId`} component={ FullPen }/>
+                <Route path={`/search/pens?`} component={ Searcher } />
             </Switch>
         </Router>
     )
