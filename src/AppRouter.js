@@ -14,6 +14,11 @@ import { Searcher } from './components/Search/Searcher';
 export const AppRouter = ({match}) => {
 
     let basename = document.location.pathname;
+    if(basename !== "/") {
+        basename = basename.slice(0, -1);
+    }else {
+        basename = "";
+    }
 
     return (
         <Router basename={basename}>
