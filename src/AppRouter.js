@@ -13,11 +13,11 @@ import { Searcher } from './components/Search/Searcher';
 
 export const AppRouter = () => {
 
-    let basename = "";
+    let basepath = "";
     let homepagePath = "/";
     
     if(document.location.pathname.includes("my-codepen")) {
-        basename = "/my-codepen";
+        basepath = "/my-codepen";
         homepagePath = "/my-codepen";
     }
 
@@ -25,9 +25,9 @@ export const AppRouter = () => {
         <Router>
             <Switch>
                 <Route exact path={`${homepagePath}`} component={ Homepage }/>
-                <Route path={`${basename}/:userId/pen/:penId`} component={ Pen }/>
-                <Route path={`${basename}/:userId/full/:penId`} component={ FullPen }/>
-                <Route path={`${basename}/search/pens?`} component={ Searcher } />
+                <Route path={`${basepath}/:userId/pen/:penId`} component={ Pen }/>
+                <Route path={`${basepath}/:userId/full/:penId`} component={ FullPen }/>
+                <Route path={`${basepath}/search/pens?`} component={ Searcher } />
             </Switch>
         </Router>
     )
