@@ -8,7 +8,7 @@ export const CodepenCard = ({data}) => {
         <article className='grid-item'>
             <header className='grid-item-header'>
                 <a href={`#/${owner.username}`} className='avatar-link'>
-                    <img alt={`Profile for ${owner.name} ${owner.lastName}`} src='' className='avatar-image'/>
+                    <img alt={`Profile for ${owner.name} ${owner.lastName}`} src={`./assets/profiles/${owner.username}.jpg`} className='avatar-image'/>
                 </a>
                 <div className='titleAndAuthor'>
                     <h2 className='title'>

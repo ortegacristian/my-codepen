@@ -1,5 +1,5 @@
 import React from 'react';
-import { pens } from '../../../data/Pens/pens';
+import { pens } from '../../../data/pens/pens';
 import { CodepenCard } from './CodepenCard/CodepenCard';
 
 export const Grid = () => {
