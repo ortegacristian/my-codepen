@@ -21,11 +21,8 @@ export const AppRouter = () => {
         homepagePath = "/my-codepen";
     }
 
-    console.log(document.location.pathname);
-    console.log(basename);
-
     return (
-        <Router basename={basename}>
+        <Router>
             <Switch>
                 <Route exact path={`${homepagePath}`} component={ Homepage }/>
                 <Route path={`${basename}/:userId/pen/:penId`} component={ Pen }/>
