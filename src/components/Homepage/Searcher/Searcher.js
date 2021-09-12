@@ -25,7 +25,7 @@ export const Searcher = () => {
                         <i className='zmdi zmdi-search'></i>
                         <input 
                                 type='text'
-                                placeholder='Search CodePen...'
+                                placeholder='Search ...'
                                 className='search-input'
                                 name='searchPen'
                                 autoComplete='off'

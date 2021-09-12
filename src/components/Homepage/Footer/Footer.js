@@ -11,8 +11,9 @@ export const Footer = () => {
                 </nav>
                 <nav id="link-footer-social-links" aria-label="Social Media">
                     <h4>Social</h4>
-                    <a href="/">Twitter</a>
-                    <a href="/">Instagram</a>
+                    <a href='https://twitter.com/IanOr_C'>Twitter</a>
+                    <a href='https://www.instagram.com/ianortega95/'>Instagram</a>
+                    <a href='https://www.linkedin.com/in/cristian-ortega'>Linkedin</a>
                 </nav>
                 <nav id="link-footer-community-links" aria-label="Community">
                     <h4>Community</h4>
